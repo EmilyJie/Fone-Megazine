@@ -355,3 +355,97 @@ footer .little-message{
   margin-left: 46%;
   height: 5rem;
 }
+
+@media (min-width:768px) and (max-width:1024px){
+  .minibar-item{
+    font-size: 1.6rem;
+  }
+
+  .little-message{
+    font-size: 1.2rem;
+  }
+
+  .highlight{
+    margin-bottom: 25%;
+  }
+
+  .img_highlight_main{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .highlight .article-text{
+    position: absolute;
+    font-size: 2.4rem;
+    margin-top: 60%;
+  }
+
+  .highlight .little-text{
+    display: none;
+  }
+
+  .highlight .little-message{
+    position: absolute;
+    margin-top: 72%;
+    margin-left: 72%;
+    text-align:right;
+  }
+
+  .theme-title-text{
+    margin-left: 0%;
+    width: fit-content;
+  }
+
+  .theme-title span:before{
+    display: none;
+  }
+  .theme-title span:after {
+    right: -1%;
+    width: 67%;
+  }
+
+  .img-bg-attention{
+    width: 100%;
+  }
+
+  .img_attention_main{
+    margin: 0 2.5%;
+    width: 95%;
+  }
+
+  .attention .article-text{
+    margin: 3% 2%;
+  }
+
+  .attention .little-message{
+    margin-left: 74%;
+  }
+
+  .latest-title span:after {
+    width: 78%;
+  }
+
+  .img_attention_news{
+    margin-top: 2%;
+    margin-right: -10%;
+  }
+
+  .attention-news-right{
+    margin-top: 2%;
+  }
+
+  .attention-news-border{
+    width: 65rem;
+    margin: 3rem 3rem;
+  }
+
+  .latest-article{
+    top: -12rem;
+  }
+
+  footer{
+    margin-top: 0;
+    margin-bottom: -1%;
+  }
+
+}
