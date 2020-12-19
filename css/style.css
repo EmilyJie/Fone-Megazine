@@ -4,7 +4,7 @@ html{
 }
 
 .navbar-nav li{
-    display: inline-block;
+  display: inline-block;
 }
 
 .nav-btn{
@@ -18,6 +18,66 @@ html{
   border-left: 0.2rem solid #BBB;
 }
 
+#wrap {
+  display: inline-block;
+  position: relative;
+  height: 24%;
+  padding: 0;
+  position: relative;
+}
+
+input[type="text"] {
+  height: 2rem;
+  font-size: 1.4rem;
+  display: inline-block;
+  font-family: 'Cousine', monospace;
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 0.05rem;
+  padding-right: 1rem;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+
+input[type="text"]:focus:hover {
+  border-bottom: 0.08rem solid #BBB;
+}
+
+input[type="text"]:focus {
+  width: 15rem;
+  z-index: 1;
+  border-bottom: 0.05rem solid #BBB;
+  cursor: text;
+}
+input[type="submit"] {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  background: url(../img/btn_header_serch.png) center center no-repeat;
+  text-indent: -1000rem;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity .4s ease;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
 .login{
   font-size: 1.4rem;
 }
@@ -26,65 +86,9 @@ html{
   font-size: 1.4rem;
 }
 
-#wrap {
-    display: inline-block;
-    position: relative;
-    height: 24%;
-    padding: 0;
-    position: relative;
-  }
-  
-  input[type="text"] {
-    height: 2rem;
-    font-size: 1.4rem;
-    display: inline-block;
-    font-family: "Lato";
-    font-weight: 100;
-    border: none;
-    outline: none;
-    color: #ffffff;
-    padding: 0.05rem;
-    padding-right: 1rem;
-    width: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: none;
-    z-index: 3;
-    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-    cursor: pointer;
-  }
-  
-  input[type="text"]:focus:hover {
-    border-bottom: 0.08rem solid #BBB;
-  }
-  
-  input[type="text"]:focus {
-    width: 15rem;
-    z-index: 1;
-    border-bottom: 0.05rem solid #BBB;
-    cursor: text;
-  }
-  input[type="submit"] {
-    height: 2rem;
-    width: 2rem;
-    display: inline-block;
-    background: url(../img/btn_header_serch.png) center center no-repeat;
-    text-indent: -1000rem;
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    cursor: pointer;
-    opacity: 0.4;
-    cursor: pointer;
-    transition: opacity .4s ease;
-  }
-  
-  input[type="submit"]:hover {
-    opacity: 0.8;
-  }
+.dropdown-item{
+  font-size: 1.4rem;
+}
 
 .logo{
   font-family: 'Allerta Stencil', sans-serif;
@@ -99,10 +103,18 @@ img:hover{
 }
 
 .minibar{
-  font-family: 'Cousine', monospace;
-  font-size: 1.8rem;
   border-top: 0.2rem solid black;
   margin: 1.6rem 0rem;
+}
+
+.minibar-item{
+  margin-top: 0.8rem;
+  font-family: 'Cousine', monospace;
+  font-size: 1.8rem;
+}
+
+.minibar-item:hover{
+  color: #FF4500;
 }
 
 .img_highlight_main{
@@ -130,6 +142,10 @@ img:hover{
   line-height: 3.6rem;
 }
 
+.article-text:hover{
+  color: #6c757d;
+}
+
 .little-text{
   font-family: 'Noto Serif TC', serif;
   font-size: 1.8rem;
@@ -137,9 +153,13 @@ img:hover{
   margin: 1.2rem 0rem;
 }
 
-.highlight-writer{
+.little-text:hover{
+  color: #6c757d;
+}
+
+.little-message{
   font-family: 'Noto Serif TC', serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   color: #A09898;
   margin: 4rem 0rem;
@@ -184,9 +204,18 @@ img:hover{
   height: 0.15rem;
 }
 
+.img-bg-attention{
+  position: absolute;
+  margin-top: 10rem;
+  margin-left: -1.5rem;
+  width: 86rem;
+  height: 52rem;
+  z-index: -1;
+}
+
 .img_attention_main{
   margin-left: 15%;
-  width: 80rem;
+  width: 75rem;
   background-color:rgba(255,69,0,0.15);
 }
 
@@ -194,8 +223,40 @@ img:hover{
   position: relative;
   margin-left: 15%;
   margin-right: 2%;
+  margin-bottom: 0.5rem;
   font-size: 3.6rem;
   line-height: 5rem;
+}
+
+.attention .little-message{
+  margin-top: 0rem;
+  margin-left: 63rem;
+}
+
+.attention-news-border{
+  width: 45rem;
+  margin: 3rem 3.5rem;
+  border-bottom: 0.15rem solid black;
+}
+
+.img_attention_news{
+  margin-left: 5rem;
+}
+
+.attention-category{
+  font-family: 'Cousine', monospace;
+  font-size: 1.4rem;
+  background-color: rgba(255,69,0,0.15);
+  width: fit-content
+}
+
+.attention-category:hover{
+  color: #FF4500;
+  background-color: #ffffff;
+}
+
+.attention-news-right{
+  margin-left: -2rem;
 }
 
 .latest-title span:after {
@@ -205,7 +266,7 @@ img:hover{
 }
 
 .latest{
-  padding: 0 25rem;
+  padding: 0 20rem;
   height: 50rem;
 }
 
@@ -216,6 +277,7 @@ img:hover{
 .img-latest{
   width: 22rem;
   height: 25rem;
+  margin-left: 5%;
 }
 
 .latest .little-text{
@@ -223,6 +285,7 @@ img:hover{
   width: 22rem;
   height: 15rem;
   margin-top: 0;
+  margin-left: 5%;
   padding-top: 1.4rem;
   padding-left: 10px;
   padding-right: 10px;
@@ -231,8 +294,7 @@ img:hover{
 .img-bg-latest{
   position: relative;
   top: 5rem;
-  margin-left: -5%;
-  width: 110%;
+  width: 100%;
 }
 
 .img-bg-latest:hover{
@@ -240,14 +302,56 @@ img:hover{
 }
 
 .btn_more{
-  margin-left: 50%;
+  margin-top: 1rem;
+  margin-left: 48%;
   font-family: 'Cousine', monospace;
   font-size: 1.4rem;
   text-align: center;
   color: black;
+  background: rgba(255,69,0,0.15);
   border-radius: 100%;
-  width: 70px;
-  height: 70px;
-  border: 5px solid rgba(255,69,0,0.15);
-  line-height: 5rem;
+  line-height: 3rem;
+  padding: 1rem;
+}
+
+.btn_more:hover{
+  color: #FF4500;
+  background-color: #ffffff;
+}
+
+footer{
+  margin-top: 5rem;
+  margin-bottom: -1%;
+}
+
+.footer-logo{
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 3.6rem;
+  color: #FF4500;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+footer .little-message{
+  font-family: 'Cousine', monospace;
+  color: #ffffff;
+  margin: 1% 48.5%;
+}
+
+.footerbar{
+  margin-top: 0%;
+}
+
+.footerbar .little-text{
+  font-size: 1.4rem;
+  width: 9rem;
+}
+
+.copyright{
+  font-family: 'Cousine', monospace;
+  font-size: 1.4rem;
+  color: #D0D0D0;
+  margin-top: 1%;
+  margin-left: 46%;
+  height: 5rem;
 }
